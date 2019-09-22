@@ -1,5 +1,1 @@
-# hello-world
-
-
-
-i am pranith
+#C programming
