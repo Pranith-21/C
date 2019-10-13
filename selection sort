@@ -1,0 +1,39 @@
+#SELECTION SORT
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int min(int b,int n)
+{
+    m=b[0];
+    for(i=1;i<n;i++)
+        if(b[i]<m)
+            m=b[i];
+    return m;
+}
+
+void select(int b[],int n)
+{  
+    int i,m,k=0;
+    int c[n];
+    for(i=0;i<n;i++,k++)
+    {
+        m=min(b,n);
+        c[k]=m;
+    }
+    for(i=0;i<k;i++)
+        printf("%d ",b[i]);
+}
+
+
+int main()
+{   
+    int n,i;
+    scanf("%d",&n);
+    int a[n];
+    for(i=0;i<n;i++)
+        scanf("%d",&a[i]);
+
+    select(a,n);
+    return 0;
+}
