@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<stdlib.h>
+void main()
+{
+    int j,i=0;
+    char a[10];
+        gets(a);
+    
+    
+    for(j=0;a[j]!='\0';j++)
+    {
+        if(a[j]>='A' && a[j]<='Z')
+            a[j]=a[j]+32;
+    }
+    char *b=a;
+    for(j=0;a[j]!='\0';j++)
+         printf("%c",*(b+j));
+}
