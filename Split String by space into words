@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<stdlib.h>
+void main()
+{
+    int j,i=0;
+    char *a;
+        gets(a);
+    
+    for(j=0;a[j]!='\0';j++)
+    {
+        if(a[j]==32)
+            printf("\n");
+        else
+            printf("%c",*(a+j));
+    }
+}
